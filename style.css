@@ -307,7 +307,7 @@ body {
 
 .org-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
   gap: 2.5rem;
 }
 
@@ -420,6 +420,9 @@ body {
   filter: grayscale(15%);
 }
 
+.org-grid--img-right .org-img,
+.org-grid--img-right .org-videos { order: 2; }
+
 /* ── Masonry Gallery ── */
 .gallery-section {
   padding: 5rem 2rem 6rem;
@@ -517,6 +520,8 @@ footer svg {
   /* Kompetens */
   .competence { padding: 4rem 1.2rem; }
   .org-grid { grid-template-columns: 1fr; }
+  .org-grid--img-right .org-img,
+  .org-grid--img-right .org-videos { order: -1; }
   .video-caption { text-align: center; }
   .article-link h4 { text-align: center; }
   .article-meta { text-align: center; display: block; }
